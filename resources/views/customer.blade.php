@@ -7,8 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    {{$mobile}}
-    <h1>Model : {{$mobile->model}}</h1>
-    <h1>ID : {{$mobile->id}}</h1>
+    {{$customer}}
+    <h1>Name : {{$customer->name}}</h1>
+    <h1>Email : {{$customer->email}}</h1>
+    <h1>ID : {{$customer->id}}</h1>
 </body>
 </html>
