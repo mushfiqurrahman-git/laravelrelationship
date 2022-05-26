@@ -15,7 +15,10 @@ class CreateMobilesTable extends Migration
     {
         Schema::create('mobiles', function (Blueprint $table) {
             $table->id();
+            $table->string('model');
             $table->timestamps();
+            $table->unsignedBigInteger('customer_id');
+            $table->foreign('customer_id')->references('id')->on('customers');
         });
     }
 
